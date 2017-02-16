@@ -6,10 +6,10 @@ Elixir.ready( function() {
             extensions: [ ".ts" ]
         },
         module: {
-            loaders: [
+            rules: [
                 {
                     test: /\.ts$/,
-                    loader: "ts-loader"
+                    use: [ { loader: "ts-loader" } ]
                 }
             ]
         }
